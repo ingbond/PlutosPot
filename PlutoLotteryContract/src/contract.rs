@@ -10,9 +10,6 @@ use crate::error::ContractError;
 use crate::state::{State, Lottery, LotteryType, Player, PlayerRange,
     config, lottery_store, lottery_read, read_lotteries};
 
-// const PERCENT_TO_DISTRIBUTOR: u64 = 15;
-// const PERCENT_TO_JACKPOT: u64 = 5;
-
 #[entry_point]
 pub fn instantiate(
     _deps: DepsMut,
@@ -400,14 +397,6 @@ pub fn update_config(
     Ok(Response::new().add_attributes(vec![("action", "update_config")]))
 }
 
-
-// percentage of value
-// fn get_percent_value(value: Uint128, percent: u64) -> Uint128 {
-//     let percent_value = value.clone().checked_mul(Uint128::new(percent as u128)).unwrap();
-//     let amount = percent_value.checked_div(Uint128::new(100)).unwrap();
-
-//     return amount
-// }
 
 #[entry_point]
 pub fn query(_deps: Deps, _env: Env, msg: QueryMsg) -> StdResult<Binary> {
