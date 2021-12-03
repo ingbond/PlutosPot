@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ConfigResponse",
+  "type": "object",
+  "required": [
+    "pluto_token",
+    "owner"
+  ],
+  "properties": {
+    "pluto_token": {
+      "$ref": "#/definitions/HumanAddr"
+    },
+    "owner": {
+      "$ref": "#/definitions/HumanAddr"
+    }
+  },
+  "definitions": {
+    "HumanAddr": {
+      "type": "string"
+    }
+  }
+}

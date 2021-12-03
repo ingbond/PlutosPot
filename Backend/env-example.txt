@@ -1,0 +1,25 @@
+FIND_WINNER_FREQUENCY_MINS = "1"
+CHECK_SUM_FREQUENCY_MINS = "1"
+AIRDROP_FREQUENCY_MINS = "1"
+
+PORT = "6060"
+
+TERRA_CHAIN_ID = "bombay-12"
+TERRA_URL = "https://bombay-lcd.terra.dev"
+
+PGHOST=''
+PGUSER=""
+PGDATABASE=""
+PGPASSWORD=""
+PGPORT=5432
+
+MNEMONIC = ""
+
+REDIS_PORT = "6379"
+REDIS_HOST = ""
+
+LOTTERY_CONTRACT = 'terra123rjrh7zr4zdyqwyl3lvw74rrufl5ku044ygym'
+DISTRIBUTOR_CONTRACT = 'terra1ptkd2v34p0z6q8rk208zqhj8jcyp7m5w9jnxr5'
+AIRDROP = 'terra1lt0y9vk389uueap2errrq2tnykzkgmc808dtzv'
+
+MODE = "debug"
